@@ -25,17 +25,9 @@ header{
     margin-right: 2%;
 }
 
-<<<<<<< HEAD
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-
-=======
 #sub{
     width: 75px;
     border: 1px solid purple;
     border-radius: 10%;
     background-color: rgb(102, 231, 102);
 }
->>>>>>> 455f543db3c47a5104dbc9de1cb919e42c86240c
