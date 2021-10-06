@@ -1,24 +1,25 @@
-<!DOCTYPE html>
+open<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Project</title>
     <link rel="stylesheet" href="./styles.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="dropdown">
-            <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city.." name="search">
-            <button class="dropbtn">Weather forecast</button>
-            <div class="dropdown-content">
-                <a href="#">Today's Weather</a>
-                <a href="#">5 day forecast</a>
-                <a href="#">7 day forecast</a>
-            </div>
-        </div>
+      <form action="" id="form" onsubmit="getWeather(event)">
+        <input type="text" name="data" id="data" placeholder="Enter Zip Code" />
+        <input type="submit" value="Submit" />
+      </form>
+      
+      <div id="weather">
+        <div id="description"></div>
+        <h1 id="temp"></h1>
+        <div id="location"></div>
+      </div>
     </header>
     <script src="./apps.js"></script>
-</body>
+  </body>
 </html>
