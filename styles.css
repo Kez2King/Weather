@@ -31,3 +31,14 @@ header{
     border-radius: 10%;
     background-color: rgb(102, 231, 102);
 }
+
+div {
+    color: #FFF;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 50%;
+  font-style: italic;
+  align-items: center;
+  margin-bottom: 7px;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
