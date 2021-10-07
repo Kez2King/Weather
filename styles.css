@@ -80,7 +80,7 @@ div {
 
 #location{
     position: relative;
-    bottom: -50px;
+    top: 35px;
     font-style: italic;
     text-align: center;
     font-size: 50px;
@@ -88,7 +88,7 @@ div {
 
 #time{
     position: relative;
-    bottom: -50px;
+    top: 30px;
     line-height:2cm;
     border-bottom: 10px;
     font-style: italic;
@@ -98,10 +98,11 @@ div {
 
 #title{
     /* border: 2px solid red; */
-    height: 150px;
-    width: 1050px;
     position: relative;
     bottom: 250px;
+    color: lightgray;
+    font-size: 90px;
+    width: 75%;
 }
 
 h1{
@@ -110,7 +111,6 @@ h1{
     bottom: 350px;
     left: 455px;
     font-size: 100px;
-    color: lightgray;
 }
 
 .weather{
@@ -119,5 +119,5 @@ h1{
     position: relative;
     top: 75px;
     right: 300px;
-    width: 350px;
+    width: 500px;
 }
