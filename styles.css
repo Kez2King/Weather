@@ -20,11 +20,12 @@ body{
 
 header{
     display: flex;
-    justify-content: center;
     /* border: 2px solid; */
     width: 100%;
     position: absolute;
     z-index: 99;
+    grid-template-columns: repeat(5, 1fr) ;
+    grid-template-rows: repeat(5, 1fr);
 }
 
 #form{
@@ -33,7 +34,7 @@ header{
     width: 50%;
     display: flex;
     justify-content: center;
-    top: 75px;
+    top: 180px;
     right: 375px;
 }
 
@@ -98,8 +99,9 @@ div {
 #title{
     /* border: 2px solid red; */
     height: 150px;
-    width: 820px;
-    margin-left: 5%;
+    width: 1050px;
+    position: relative;
+    bottom: 250px;
 }
 
 h1{
@@ -115,7 +117,7 @@ h1{
     border: 2px solid black;
     /* background: lightslategray; */
     position: relative;
-    bottom: 80px;
-    right: 450px;
+    top: 75px;
+    right: 300px;
     width: 350px;
 }
