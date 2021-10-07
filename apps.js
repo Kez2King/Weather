@@ -112,7 +112,7 @@ function init(){
     let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2)
     let directionX = (Math.random() * 5) - 2.5
     let directionY = (Math.random() * 5) - 2.5
-    let color = '#FFFFFF'
+    let color = '#FFFF00'
 
     particlesArray.push(new Particles(x, y, directionX, directionY, size, color))
   }
@@ -128,9 +128,9 @@ function connect(){
       )
 
       if (distance < (canvas.width / 0.15) * (distance < (canvas.height / 0.15))){
-        opacityValue = 1 - (distance / 50)
+        opacityValue = 1 - (distance / 500)
         ctx.strokeStyle = 'rgb(255,255,255, + opacitValue)'
-        ctx.lineWidth = 2
+        ctx.lineWidth = 1.4
         ctx.beginPath()
         ctx.moveTo(particlesArray[a].x, particlesArray[a].y)
         ctx.lineTo(particlesArray[b].x, particlesArray[b].y)
