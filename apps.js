@@ -64,7 +64,7 @@ class Particles {
   draw (){
     ctx.beginPath()
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false)
-    ctx.fillStyle = '#8C5523'
+    ctx.fillStyle = '#FFFFFF'
     ctx.fill()
   }
   // Check Positive, mouse position, moveover,
@@ -112,33 +112,21 @@ function init(){
     let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2)
     let directionX = (Math.random() * 5) - 2.5
     let directionY = (Math.random() * 5) - 2.5
-    let color = '#8C5523'
+    let color = '#FFFFFF'
 
     particlesArray.push(new Particles(x, y, directionX, directionY, size, color))
   }
-}
-// Animation Loop
-function animate(){
-  requestAnimationFrame(animate)
-  ctx.clearRect(0, 0, innerWidth, innerHeight)
-
-  for (let i = 0; i < particlesArray.length; i++) {
-    particlesArray[i].update()
-  }
-  connect()
 }
 
 // Check if particles are close enough to draw lines
 function connect(){
   for (let a = 0; a < particlesArray.length; a++) {
     for (let b = 0; b < particlesArray.length; b++) {
-      let distance = ((particlesArray[a].x - particlesArray[b].x)
-      * (particlesArray[a].x - particlesArray[b].x)
-      + (particlesArray[a].y - particlesArray[b].y)
-      * (particlesArray[a].y - particlesArray[b].y)
+      let distance = ((particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x)
+      + (particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y)
       )
 
-      if ((distance < canvas.width/7) * (distance < canvas.height/7)){
+      if (distance < (canvas.width/7) * (distance < (canvas.height/7))){
         ctx.strokeStyle = 'rgba(140,85,31,1)'
         ctx.lineWidth = 1
         ctx.beginPath()
@@ -151,3 +139,14 @@ function connect(){
 }
 init();
 animate();
+
+// Animation Loop
+function animate(){
+  requestAnimationFrame(animate)
+  ctx.clearRect(0, 0, innerWidth, innerHeight)
+
+  for (let i = 0; i < particlesArray.length; i++) {
+    particlesArray[i].update()
+  }
+  connect()
+}
