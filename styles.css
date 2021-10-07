@@ -54,7 +54,16 @@ div {
 
 #location{
     font-style: italic;
-    text-align: center;
-    font-size: 60px;
-    
+    text-align: left;
+    font-size: 60px;   
+}
+
+#date{
+    position: relative;
+    line-height: 2cm;
+    border-bottom: 10px;
+    font-style: italic;
+    text-align: left;
+    font-size: 20px;   
+}
 }
