@@ -10,16 +10,17 @@
 <body>
     <canvas id="animatedBack"></canvas>
     <header>
-        <form action="" id="foqqrm" onsubmit="getWeather(event)">
+        <h1 id="title">Weather Widget</h1>
+        <form action="" id="form" onsubmit="getWeather(event)">
             <input type="text" name="data" id="data" placeholder="Enter Zip Code" />
             <input type="submit" id="sub" value="Submit" />
         </form>
         
-            <div id="weather">
+            <div class="weather">
                 <div id="description"></div>
                 <h1 id="temp"></h1>
                 <div id="location"></div>
-                <div id="time" onclick="click"></div>
+                <div id="time"></div>
             </div>
         </div>
     </header>
