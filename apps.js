@@ -127,10 +127,10 @@ function connect(){
       + (particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y)
       )
 
-      if (distance < (canvas.width / 0.09) * (distance < (canvas.height / 0.09))){
-        opacityValue = 1 - (distance / 2000)
+      if (distance < (canvas.width / 0.15) * (distance < (canvas.height / 0.15))){
+        opacityValue = 1 - (distance / 50)
         ctx.strokeStyle = 'rgb(255,255,255, + opacitValue)'
-        ctx.lineWidth = 1
+        ctx.lineWidth = 2
         ctx.beginPath()
         ctx.moveTo(particlesArray[a].x, particlesArray[a].y)
         ctx.lineTo(particlesArray[b].x, particlesArray[b].y)
