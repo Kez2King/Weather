@@ -34,7 +34,7 @@ header{
     width: 50%;
     display: flex;
     justify-content: center;
-    top: 180px;
+    top: 145px;
     right: 375px;
 }
 
@@ -103,6 +103,7 @@ div {
     color: lightgray;
     font-size: 90px;
     width: 75%;
+    font-family: fantasy;
 }
 
 h1{
@@ -120,4 +121,132 @@ h1{
     top: 75px;
     right: 300px;
     width: 500px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .weather{
+        top: 450px;
+        right: 525px;
+        width: auto;
+    }
+    #form{
+        right: 280px;
+        top: 250px;
+        width: 350px;
+    }
+    #temp{
+        left: 22px;
+    }
+    #location{
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 590px){
+    .weather{
+        top: 425px;
+        right: 470px;
+        width: auto;
+    }
+    #form{
+        right: 210px;
+        top: 200px;
+        width: 350px;
+    }
+}
+@media screen  and (min-width: 591px) and (max-width: 768px){
+    #title{
+        top: -40px;
+        font-size: 70px;
+        width: 50%;
+        left: 230px
+    }
+    .weather{
+        top: 360px;
+        right: 320px;
+        width: auto;
+    }
+    #form{
+        right: 150px;
+        top: 260px;
+        width: 350px;
+    }
+    #temp{
+        left: 20px;
+    }
+    #location{
+        font-size: 25px;
+    }
+}
+@media screen  and (min-width: 769px) and (max-width: 1024px){
+    #title{
+        top: -40px;
+        font-size: 70px;
+        width: 50%;
+        left: 265px
+    }
+    .weather{
+        top: 360px;
+        right: 320px;
+        width: auto;
+    }
+    #form{
+        right: 125px;
+        top: 260px;
+        width: 350px;
+    }
+    #description{
+        left: 5px;
+    }
+    #temp{
+        left: 20px;
+    }
+    #location{
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    #title{
+        left: 400px;
+        bottom: 100px;
+    }
+    #form{
+        right: 5px;
+        top: 300px;
+    }
+    .weather{
+        right: 350px;
+        top: 430px;
+    }
+    #temp{
+        left: 48px;
+    }
+    #location{
+        font-size: 35px;
+    }
+}
+@media screen and (min-width: 1201px) and (max-width: 1475px) {
+    #title{
+        left: 425px;
+    }
+    #form{
+        right: 415px;
+        top: 175px;
+    }
+    .weather{
+        right: 250px;
+        top: 75px;
+    }
+}
+@media screen and (min-width: 1476px) {
+    #title{
+        left: 625px;
+    }
+    #form{
+        right: 650px;
+        top: 125px;
+    }
+    .weather{
+        right: 480px;
+        top: 25px;
+    }
 }
