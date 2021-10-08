@@ -160,7 +160,7 @@ function animate(){
 window.addEventListener('resize', function (){
   canvas.width = innerWidth
   canvas.height = innerHeight
-  mouse.radius = ((canvas.height / 80) * (canvas.height / 80))
+  mouse.radius = ((canvas.height / 160) * (canvas.height / 160))
   init()
 })
 
