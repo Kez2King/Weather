@@ -24,8 +24,6 @@ header{
     width: 100%;
     position: absolute;
     z-index: 99;
-    grid-template-columns: repeat(5, 1fr) ;
-    grid-template-rows: repeat(5, 1fr);
 }
 
 #form{
