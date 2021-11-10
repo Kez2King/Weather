@@ -1,5 +1,8 @@
 //fetch data from weather api
 
+let box = document.getElementById("wbox");
+let submit = document.getElementById("sub");
+
 function weatherData(cityID) {
   let key = "e1dbe5d9b3f3db1dbeb49b83cfbafb0e";
   fetch(
@@ -168,3 +171,9 @@ window.addEventListener('resize', function (){
 window.addEventListener('mouseout', function (){
   mouse.x = undefined
 })
+
+function makeBox(){
+  box.style.border = "2px solid black";
+}
+
+submit.addEventListener('click', makeBox);

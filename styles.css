@@ -115,7 +115,7 @@ h1{
 }
 
 .weather{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* background: lightslategray; */
     position: relative;
     top: 75px;
@@ -248,5 +248,8 @@ h1{
     .weather{
         right: 480px;
         top: 25px;
+    }
+    #description{
+        left: 1px;
     }
 }
