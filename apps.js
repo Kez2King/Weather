@@ -34,9 +34,9 @@ function drawWeather(d) {
   document.getElementById("temp").innerHTML = celcius + "&deg;";
   document.getElementById("location").innerHTML = d.name;
   // For todays date;
-  let time = document.getElementById("time")
   let day = new Date().toLocaleString()
-  time.append(day)
+  document.getElementById("time").innerHTML = day
+  
 }
 
 // Animated Background
